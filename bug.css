@@ -1,0 +1,8 @@
+This error occurs when using Tailwind's `@apply` directive with a pseudo-class selector that's not properly escaped.  For example, using `@apply hover:text-blue-500` within a class definition will cause a parsing error because the colon in `hover:` conflicts with Tailwind's class naming conventions.
+
+```css
+/* Incorrect */
+.my-button {
+  @apply hover:text-blue-500;
+}
+```
